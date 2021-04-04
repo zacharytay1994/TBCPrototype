@@ -1,6 +1,12 @@
 #include <iostream>
 
+#include "FileIO.h"
+#include "Entity.h"
+
 int main() {
 	using namespace std;
-	cout << "hello" << endl;
+	std::stringstream ss;
+	Entity entity;
+	ss << entity;
+	WriteToFile("testing.txt", ss);
 }
